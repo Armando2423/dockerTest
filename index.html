@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Ireland</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Descubre Irlanda</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="image-container" onclick="openFullscreen('src/imgs/cascada.jpg')">
+                <img src="src/imgs/cascada.jpg" alt="Beautiful Waterfall in Ireland">
+                <p>Observa las bellas cascadas</p>
+            </div>
+            <div class="image-container" onclick="openFullscreen('src/imgs/food.jpg')">
+                <img src="src/imgs/food.jpg" alt="Traditional Irish Food">
+                <p>Deliciosa comida</p>
+            </div>
+            <div class="image-container" onclick="openFullscreen('src/imgs/people.jpg')">
+                <img src="src/imgs/people.jpg" alt="Irish People">
+                <p>Gente amable</p>
+            </div>
+            <div class="image-container" onclick="openFullscreen('src/imgs/road.jpg')">
+                <img src="src/imgs/road.jpg" alt="Scenic Road in Ireland">
+                <p>Camino por nuestros caminos naturales</p>
+            </div>
+        </section>
+    </main>
+    <div id="fullscreenContainer" class="fullscreen" style="display: none;" onclick="closeFullscreen()">
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+    </div>
+
+    <!-- Cargar el script después de que el DOM se haya renderizado -->
+    <script src="./src/backend/bck.js"></script>
+</body>
+</html>
